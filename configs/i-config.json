@@ -1,0 +1,60 @@
+{
+  "network": {
+    "name": "i",
+    "verbosity": 5,
+    "consensus": "raft",
+    "quorumVersion": "2.6.0",
+    "transactionManager": "none",
+    "permissioned": true,
+    "genesisFile": "none",
+    "generateKeys": false,
+    "configDir": "network/i/resources",
+    "deployment": "bash",
+    "cakeshop": "none",
+    "splunk": false,
+    "prometheus": false,
+    "reporting": false,
+    "reportingRpcPort": "4000",
+    "reportingUiPort": "3000",
+    "networkId": "10",
+    "customizePorts": false,
+    "cakeshopPort": "8999",
+    "remoteDebug": false,
+    "splunkIp": "127.0.0.1",
+    "splunkPort": "8000",
+    "splunkHecPort": "8088"
+  },
+  "nodes": [
+    {
+      "quorum": {
+        "ip": "127.0.0.1",
+        "devP2pPort": 21000,
+        "rpcPort": 22000,
+        "wsPort": 23000,
+        "raftPort": 50401,
+        "graphQlPort": 24000
+      }
+    },
+    {
+      "quorum": {
+        "ip": "127.0.0.1",
+        "devP2pPort": 21001,
+        "rpcPort": 22001,
+        "wsPort": 23001,
+        "raftPort": 50402,
+        "graphQlPort": 24001
+      }
+    },
+    {
+      "quorum": {
+        "ip": "127.0.0.1",
+        "devP2pPort": 21002,
+        "rpcPort": 22002,
+        "wsPort": 23002,
+        "raftPort": 50403,
+        "graphQlPort": 24002
+      }
+    }
+  ],
+  "containerPorts": {}
+}
